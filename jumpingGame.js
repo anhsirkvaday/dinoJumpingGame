@@ -47,10 +47,4 @@ function manFall(){
   },25);
 }
 
-// let aniDuration=5;
-// setInterval(()=>{
-//   aniDuration-=.2;
-//   monster.style.animationDuration = `${aniDuration}s`;
-//   console.log(aniDuration);
-// },5000);
 

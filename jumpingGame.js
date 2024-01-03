@@ -3,7 +3,7 @@ let monster=document.getElementsByClassName('mosterRunning')[0];
 let isJumping=false;
 let jumpHeight=80;
 let leftMove=300;
-let keys = {};
+
 window.onkeydown=(e)=>{
   e.preventDefault();
   if(e.keyCode==32 || e.code=='Space' || e.keyCode==38 || e.code=='ArrowUp'){

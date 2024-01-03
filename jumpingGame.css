@@ -7,11 +7,55 @@ body {
   background-image: url("bgImage.jpg");
   background-size: cover;
 }
+header{
+  border: 0px solid black;
+  height: 10dvh;
+  padding: 5px 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1{
+  font-family: 'Monoton', sans-serif;
+  font-weight: 700;
+  color:darkred;
+}
+header h2{
+  font-family: 'Monoton', sans-serif;
+  color: darkred;
+  font-weight: 700;
+}
+header h2 span{
+  color:rgb(0, 0, 0);
+}
+.gameOver{
+  border: 0px solid black;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40dvh;
+}
+.gameOver img{
+  outline: 10px dotted rgb(255, 0, 0);
+  outline-offset: 4px;
+  display: none;
+}
+.gameOver #start{
+  font-size: 25px;
+  font-weight: 700;
+}
+.gameOver #start:hover{
+  color: red;
+}
 .manRunner {
   width: 13%;
   height: 16%;
   position: absolute;
-  bottom: 80px;
+  bottom: 6%;
   left: 300px;
 }
 
@@ -19,11 +63,13 @@ body {
     width: 13%;
     height: 15%;
     position: absolute;
-    bottom: 10%;
+    bottom: 6%;
     right: -20px;
-    animation: monster 2.5s linear infinite;
     /* background-color: aqua; */
     border-radius: 40%;
+}
+.monsterAni{
+  animation: monster 3s linear infinite;
 }
 
 @keyframes monster {
